@@ -10,7 +10,7 @@ RUN rm /tmp/era.war
 
 RUN mv /tmp/eraweb /usr/local/tomcat/webapps/era
 
-ADD https://github.com/BlackSmith/docker-eset-era-console/run.sh /usr/local/bin/
+ADD run.sh /usr/local/bin/
 RUN chmod +x /usr/local/bin/run.sh
 
 EXPOSE 80 8080
